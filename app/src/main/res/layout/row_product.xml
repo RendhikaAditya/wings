@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/teal_700" />
+
+    <LinearLayout
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/namaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="TextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp12.000"
+            android:textSize="12sp"
+            android:id="@+id/diskonHarga"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp15.000"
+            android:id="@+id/harga"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUY"
+            android:id="@+id/btnBuy"
+            android:backgroundTint="@color/teal_700"/>
+    </LinearLayout>
+
+</LinearLayout>

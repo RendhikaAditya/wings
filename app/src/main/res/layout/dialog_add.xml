@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Jumlah Item"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_10"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/jmlItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_10"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end|center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_10"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_10"
+            android:backgroundTint="@color/teal_700"
+            android:text="Simpan"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="right"
+            android:textColor="@color/white"/>
+
+</LinearLayout>

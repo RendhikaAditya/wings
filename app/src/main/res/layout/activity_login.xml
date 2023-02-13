@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtLoginPenumpang"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp">
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:hint="Masukan username"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:drawablePadding="10dp"
+                            android:maxLines="1"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtLoginpass"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/password"
+                            android:backgroundTint="@color/white"
+                            android:hint="password"
+                            android:drawablePadding="10dp"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="30dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/masuk"
+                            android:layout_gravity="end|bottom"
+                            android:layout_margin="8dp"
+                            android:text="login"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            android:backgroundTint="@color/teal_700"
+                            app:cornerRadius="50dp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

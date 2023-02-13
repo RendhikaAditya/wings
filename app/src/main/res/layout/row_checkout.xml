@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/teal_700" />
+
+    <LinearLayout
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/namaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="TextView"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/btnKurang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/shape_10"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="8dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/shape_10"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jmlItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_10"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PCS"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/satuan"
+                    android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/btnTambah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end|center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/shape_10"
+                    android:backgroundTint="@android:color/holo_green_dark"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp15.000"
+            android:id="@+id/harga"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
